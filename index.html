@@ -11,24 +11,31 @@
 
 <body data-spy="scroll" data-target="#navbarResponsive">
 
-
-
+<!-- ====================================================================================================== -->
  <!-- home -->
 <div id="home" class="container-fluid">
 
+<!-- start alert message -->
+<div class="alert text-center mb-0 rounded-0 alert-dismissible fade show">
+	<p class="blinking">警告</p>
+	<h3 class="blinking">機密指定</h3>		
+	<p class="blinking">財団データベースへの許可無きアクセスは固く禁止されています<br>違反者は追跡、特定、拘留されます</p>
+	<button  class="btn btn-outline-dark"data-dismiss="alert">
+		はい、私は財団職員です
+	</button>
+</div>
+<!-- end alert message -->
+
 <!-- start Navigation bar -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"> 
-		<a href="#home" class="navbar-brand"><img class="logo-img" src="img/nuno.png"></a>
-		<button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarResponsive">
+	<nav class="navbar navbar-expand-xl navbar-dark bg-dark"> 
+		<a href="#home" class="navbar-brand"><img class="logo-img" src="img/logo.jpg"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div id="navbarResponsive" class="collapse navbar-collapse">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
 					<a href="#home" class="nav-link">ようこそ</a>
-				</li>
-				<li class="nav-item">
-					<a href="#about" class="nav-link">SCP財団とは</a>
 				</li>
 				<li class="nav-item">
 					<a href="#mission" class="nav-link">理念と使命</a>
@@ -40,7 +47,7 @@
 					<a href="#security-class" class="nav-link">セキュリティクラス</a>
 				</li>
 				<li class="nav-item">
-					<a href="#example" class="nav-link">オブジェクトの例</a>
+					<a href="#example" class="nav-link">オブジェクト例</a>
 				</li>
 	 			<li class="nav-item ">
 					<a href="#contact" class="nav-link">お問い合わせ</a>
@@ -51,6 +58,9 @@
 
 <!-- end navgation bar -->
 
+
+
+<!-- ====================================================================================================== -->
 <!-- start landing page -->
 	<div class="landing">
 		<div class="home-wrap">
@@ -60,63 +70,84 @@
 	</div>
 
 	<div class="caption text-center">
-		<h1>SCP財団</h1>	
-		<p>警告</p>
-		<h3>機密指定</h3>	
-		<p>財団データベースへの許可無きアクセスは固く禁止されています
-			<br>違反者は追跡、特定、拘留されます</p>	
-		<a class="btn btn-outline-light btn-lg" href="#about">初めての方へ</a>
+		<div class="caption">
+			<h1>SCP財団</h1>
+			<p>
+				人類はこれまでにおよそ25万年もの歴史を歩んできた。
+				<br>しかしその歴史のうち特筆すべきは僅かこの4000年に過ぎない。
+				<br>
+				<br>我々は25万年に渡って何をしていたのか？
+				<br>そのほとんどを、理解の外にあるものを恐れて、洞窟の中で小さな焚火を囲み身を寄せ合って過ごしていたのだ。
+				<br>太陽が昇る理由の未知よりも、人頭を持つ巨鳥や生命を宿す岩々の神秘こそが恐るべき『理外のもの』であった。
+				<br>そして我々はそれらを『神』と、あるいは『悪魔』と呼び、許しを乞い、救済の祈りを捧げた。
+				<br>
+				<br>時は流れ、それらは次第に衰え、我々の数は多くに増えた。
+				<br>恐れるものは数を減らし、世界はより理に適ったものへとなり始めた。
+				<br>しかしそれでも、不可解なるものは決して消え去りはしなかった。
+				<br>まるで世界が不条理と不可能を必要としているかのように。
+				<br>
+				<br>人類は恐怖から逃げ隠れていた時代に逆戻りしてはならない。
+				<br>他に我々を守るものはいない、我々自身が立ち上がらなければならないのだ。
+				<br>
+				<br>人類が健全で正常な世界で生きていけるように、他の人類が光の中で暮らす間、我々は暗闇の中に立ち、それと戦い、封じ込め、人々の目から遠ざけなければならない。
+			</p>
+			<a class="btn btn-outline-light btn-lg" href="#about">初めての方へ</a>
+		</div>
 	</div>
 </div>
 
 
- <!-- about -->
- <div id="about" class="offset">
-	<div class="col-12 narrow text-center">
-		<div class="about-">
-			<h1>Nuno Theme Advanced Bootstrap about</h1>
-			<p class="lead">
-				Learn Bootstrap by creating an advanced Bootstrap 4 Responsive Website Template from scratch, with no steps skipped!
-			</p>
-			<a href="#" class="btn btn-primary btn-md" target="_blank">Bootstrap about</a>
-		</div>
-		
-	</div>
- </div>
-
- <!-- object-class -->
- <div id="object-class" class="offset">
+ <!-- ====================================================================================================== -->
+ <!-- mission -->
+ <div id="mission" class="offset">
 
 <!-- start jumbotron -->
 	 <div class="jumbotron">
 		<div class="narrow text-center">
 			<div class="col-12">
-				<h3 class="heading">object-class</h3>
-				<div class="heading_underline"></div>
+				<h3 class="heading-title">理念と使命</h3>
+				<div class="heading-underline"></div>
+				<p class="heading">
+					財団は異常な物品、存在、現象を封じ抑え込むことを任務として、秘密裏かつ世界規模での活動を行っています。
+					<br>それらの異常存在は世界の安全に対する重大な脅威であり、財団の活動は主要各国の政府から委任され、管轄権を越える権限を認められたものです。
+					<br>
+					<br>
+					財団の活動は正常性を維持するためのものであり、世界中の一般市民が異常に対する恐怖や疑念を抱くことなく日常を生きることができるよう、地球外、異次元、その他の超常的存在が及ぼす影響からの人類の独立を維持します。
+					<br>我々の任務は３つの要素から成ります。
+				</p>	
 			</div>
 
-			<div class="row text-center feature-contents">
+			<div class="row text-center contents">
 				<div class="col-md-4">
-					<div class="feature">
-						<i class="fas fa-play-circle fa-4x feature-icon" data-fa-transform="shrink-3 up-5"></i>
-						<h3>Custom Animation</h3>
-						<p>Animate.css and Waypoints.js allow for smooth animations scrolling down the site.</p>
+					<div class="content">
+						<i class="fas fa-play-circle fa-4x content-icon" data-fa-transform="shrink-3 up-5"></i>
+						<div class=content-title>
+							<h2>確保</h2>
+							<p>Secure</p>
+						</div>
+						<p>財団は異常存在が一般市民や対抗組織の手に落ちることを防ぐため、広域に渡る監視活動と通信傍受を通じ、可能な限り早期に異常存在を確保します。</p>
 					</div>
 				</div>
 
 				<div class="col-md-4">
-					<div class="feature">
-						<i class="fas fa-sliders-h fa-4x feature-icon" data-fa-transform="shrink-3 up-5"></i>
-						<h3>Content Slider</h3>
-						<p>Owl.Carousel.js makes navigating content sliders seamless with it's content carousel navigation.</p>
+					<div class="content">
+						<i class="fas fa-sliders-h fa-4x content-icon" data-fa-transform="shrink-3 up-5"></i>
+						<div class=content-title>
+							<h2>収容</h2>
+							<p>Contain</p>
+						</div>
+						<p>財団は異常存在の影響が拡散することを防ぐため、あるいはそれらに関する知識が公衆に流布されるのを防ぎもみ消すため、移送、隠蔽、分解などにより異常存在を収容します。						</p>
 					</div>
 				</div>
 
 				<div class="col-md-4">
-					<div class="feature">
-						<i class="fab fa-wpforms fa-4x feature-icon" data-fa-transform="shrink-4 up-5"></i>
-						<h3>Contact Form</h3>
-						<p>The Bootstrap HTML will send directly to your email address using PHPMailer.php.</p>
+					<div class="content">
+						<i class="fab fa-wpforms fa-4x content-icon" data-fa-transform="shrink-4 up-5"></i>
+						<div class=content-title>
+							<h2>保護</h2>
+							<p>Protect</p>
+						</div>
+						<p>財団は異常存在の影響から人類を保護するとともに、それら異常存在の性質と挙動を完全に理解する、あるいはそれらに基づいた新しい科学的理論が考案される時が来るまで、そうした異常存在を保護します。財団が異常存在の無力化・破壊を行うのは最後の手段であり、その異常存在を収容し続けることがあまりに危険すぎると判断した場合に限られた選択肢です。</p>
 					</div>
 				</div>
 			</div>
@@ -125,57 +156,326 @@
 <!-- end jumbotron -->
 </div>
 
- <!-- security-class -->
- <div id="security-class" class="offset">
-	 <div class="fixed-background">
-		 <div class="row dark text-center">
+<!-- ====================================================================================================== -->
+ <!-- object-class -->
+ <div id="object-class" class="offset">	
+	 <div class="o-fixed-background">
+		 <div class="narrow text-center">
 			 <div class="col-12">
-				 <h3 class="heading">Built with Care</h3>
-				 <div class="heading-underline"></div>
+				<h3 class="o-heading-title">オブジェクトクラス</h3>
+				 <div class="o-heading-underline"></div>
+				 <p class="o-heading">
+					特別収容プロトコル(Special Containment Procedures)を必要とする全ての異常な物品、存在、現象にはオブジェクトクラスが割り当てられます。
+					<br>オブジェクトクラスとは標準的なSCP記事テンプレートの一項目であり、オブジェクトの収容難易度の目安としての役割を果たしています。
+					<br>財団世界において、オブジェクトクラスは収容の必要性の識別、研究の優先順位付け、予算編成、その他の考慮事項のために存在します。
+					<br>オブジェクトのオブジェクトクラスは数多くの要素によって決定されますが、最も重要な要素はそのオブジェクトの収容の困難性および目的です。
+				</p>
 			 </div>
 
-			 <div class="col-md-4">
-				 <h3>HTML 5</h3>
-				 <div class="feature">
-					 <i class="fas fa-code fa-3x"></i>
-				 </div>
-				 <p class="lead">Built with the latest, HTML 5.</p>
+			 <div class="row text-center o-contents">	
+			 	<div class="col-12">
+					 <div class="o-content">
+						<button data-toggle="collapse" data-target="#o-description-safe" class="btn btn-outline-primary">Safe</button>
+						<div id="o-description-safe" class="collapse">
+							<p class="lead">
+								Safeクラスのオブジェクトは容易かつ安全に収容できるアノマリーです。
+								<br>これはしばしば財団がこれまでにそのオブジェクトを十分によく研究しているため収容にそれほど多くの資源を必要としないという事実か、そのオブジェクトが動作するにあたって具体的かつ意識的な活性化または誘因を必要とするという事実によります。
+								<br>「Safe」と分類されてはいるものの、これはそのオブジェクトを取り扱ったり動作させたりした際に危険がないということを意味するわけではありません。
+					   		</p>
+							<a href="http://scp-jp.wikidot.com/system:page-tags/tag/safe" class="btn btn-dark btn-md" target="_blank">Safeクラスのオブジェクトリストはこちら</a>
+						</div>
+					 </div>				 
+			 	</div>	
 
-			 </div>	
+			 	<div class="col-12">
+					<div class="o-content">
+						<button data-toggle="collapse" data-target="#o-description-euclid" class="btn btn-outline-secondary">Euclid</button>
+						<div id="o-description-euclid" class="collapse">
+							<p class="lead">
+								Euclidクラスのオブジェクトは完全に収容するのにより多くの資源を必要とするアノマリーや、その収容が必ずしも信頼できるものではないアノマリーです。
+								<br>通常これはそのオブジェクトの性質が十分に解明されていないか本質的に予測不可能であることによります。
+								<br>Euclidは最も大きな適用範囲を持つオブジェクトクラスであり、他の標準のオブジェクトクラスのいずれにも分類しがたいオブジェクトは通常このクラスに分類されます。
+								<br>特に自律性、自我、知性を持つオブジェクトは、それ自身が思考または活動することにより本質的に予測不可能であるため、通常はEuclidに分類されます。
+							</p>
+							<a href="http://scp-jp.wikidot.com/system:page-tags/tag/euclid" class="btn btn-dark btn-md" target="_blank">Euclidクラスのオブジェクトリストはこちら</a>
+						</div>
+					</div>
+				</div>		
 
-			 <div class="col-md-4">
-				<h3>BOOTSTRAP 4</h3>
-				<div class="feature">
-					<i class="fas fa-bold fa-3x"></i>
+				<div class="col-12">
+					<div class="o-content">
+						<button data-toggle="collapse" data-target="#o-description-keter" class="btn btn-outline-warning">Keter</button>
+						<div id="o-description-keter" class="collapse">
+							<p class="lead">
+								Keterクラスのオブジェクトは継続的にまたは確実に収容することが極めて困難であり、しばしば収容プロトコルが大規模で複雑なものになるアノマリーです。
+								<br>財団はこれらのオブジェクトに対する確固たる理解を得ていないか、これらのオブジェクトを適切に収容または対抗する技術に欠けているため、これらのオブジェクトを上手く収容できないことがしばしばあります。
+								<br>「Keter」に分類されていることはそのオブジェクトが危険であるということを意味するわけではなく、単に収容するのが非常に困難または費用がかかるということを意味します。
+							</p>
+							<a href="http://scp-jp.wikidot.com/system:page-tags/tag/keter" class="btn btn-dark btn-md" target="_blank">Keterクラスのオブジェクトリストはこちら</a>	
+						</div>
+					</div>
+				</div>	
+			
+				<div class="col-12">
+					<div class="o-content">
+						<button data-toggle="collapse" data-target="#o-description-thaumiel" class="btn btn-outline-danger">Thaumiel</button>
+						<div id="o-description-thaumiel" class="collapse">
+							<p class="lead">
+								Thaumielクラスのオブジェクトは財団が他のオブジェクトを収容するために特別に使用するアノマリーです。
+								<br>Thaumielクラスのオブジェクトは存在そのものが財団における最高レベルの機密であり、その所在、機能、現在の状態はO5評議会以外では非常に限られた職員にのみ知らされます。
+							</p>
+							<a href="http://scp-jp.wikidot.com/system:page-tags/tag/thaumiel" class="btn btn-dark btn-md" target="_blank">Thaumielクラスのオブジェクトリストはこちら</a>	
+						</div>
+					</div>
+				</div>	
+
+				<div class="col-12">
+					<div class="o-content">
+						<button data-toggle="collapse" data-target="#o-description-neutralized" class="btn btn-outline-success">Neutralized</button>
+						<div id="o-description-neutralized" class="collapse">
+							<p class="lead">
+								Neutralizedクラスのオブジェクトは故意または過失によって破壊されたもしくは無力化されたことを原因として、もはや異常ではなくなったアノマリーです。
+							</p>
+							<a href="http://scp-jp.wikidot.com/system:page-tags/tag/neutralized" class="btn btn-dark btn-md" target="_blank">Neutralizedクラスのオブジェクトリストはこちら</a>	
+						</div>
+					</div>
 				</div>
-				<p class="lead">Built with the latest, BOOTSTRAP 4.</p>
-
-			</div>	
-
-			<div class="col-md-4">
-				<h3>CSS 3</h3>
-				<div class="feature">
-					<i class="fab fa-css3 fa-3x"></i>
-				</div>
-				<p class="lead">Built with the latest, CSS 3.</p>
-
-			</div>	
-		 </div> <!--- end row dark -->
-
+			</div>
+		</div>
 		 <div class="fixed-wrap">
 			<div class="fixed">				
 			</div>
 		</div>
 
 	 </div> <!--- End fixed background --->
-
 </div>
 
+<!-- ====================================================================================================== -->
+ <!-- security-class -->
+ <div id="security-class" class="offset">	
+	<div class="s-fixed-background">
+		<div class="narrow text-center">
+			<div class="col-12">
+			   <h3 class="o-heading-title">セキュリティクリアランスクラス</h3>
+				<div class="o-heading-underline"></div>
+				<p class="o-heading">
+					財団の職員に与えられるセキュリティクリアランスはその人物が許可される最高のレベルあるいはタイプの情報を表しています。
+					<br>ただしクリアランスの付与はそのレベルの情報に直ちにアクセスできることを意味するわけではありません。
+					<br>職員はそれぞれの部署を監督する情報開示担当者の指示のもとで「知る必要のある最小限の」情報にのみアクセスが許可されます。
+			   </p>
+			</div>
+
+			<section class="py-5">  <!-- start tab section -->
+				<div class="container">
+				  <ul class="nav nav-tabs">
+					<li class="nav-item"><a href="#level" class="nav-link active" data-toggle="tab">概観</a></li>
+					<li class="nav-item"><a href="#class" class="nav-link" data-toggle="tab">職員の分類</a></li>
+					<li class="nav-item"><a href="#occupation" class="nav-link" data-toggle="tab">スタッフの分類</a></li>
+				  </ul>
+				  <div class="tab-content py-4">
+					<div id="level" class="tab-pane active"> <!-- start level section -->
+						<section class="bg-dark text-center text-light py-5">
+							<p class="mb-5 table-description">
+								財団の職員に与えられるセキュリティクリアランスはその人物が許可される最高のレベルあるいはタイプの情報を表しています。
+								<br>ただし、クリアランスの付与はそのレベルの情報に直ちにアクセスできることを意味するわけではありません。
+								<br>職員はそれぞれの部署を監督する情報開示担当者の指示のもとで「知る必要のある最小限の」情報にのみアクセスが許可されます。
+							</p>
+							<div class="container">
+							  <table class="table table-hover">
+								<thead>
+								  <tr><th></th><th>公開範囲</th><th>概要</th></tr>
+								</thead>
+								<tbody>
+								  	<tr><td>Lv.0</td><td>公式用途のみ</td>
+										<td>レベル0セキュリティクリアランスは<span class="font-weight-bold text-danger">財団が収容する異常物体・存在に関する情報にアクセスする必要のない、末端の職員</span>に与えられます。レベル0は基本的には作戦データにアクセスしない事務、ロジスティクス担当、施設の守衛などに与えられます。</td>
+									</tr>
+									<tr><td>Lv.1</td><td>内部機密</td>
+										<td>レベル1セキュリティクリアランスは<span class="font-weight-bold text-danger">収容されている異常物体・存在に対して近いところで作業するものの、直接的ではなく、間接的もしくは情報だけに接触する職員</span>に与えられます。レベル1セキュリティクリアランスは基本的には収容設備があるか繊細な情報を扱う必要のある施設に勤務する事務、ロジスティクス担当、守衛に与えられます。</td>
+									</tr>
+									<tr><td>Lv.2</td><td>最低レベル機密</td>
+										<td>レベル2セキュリティクリアランスは、<span class="font-weight-bold text-danger">収容されている異常物体・存在に関する情報にアクセスする必要のあるセキュリティ担当者および研究職員</span>に与えられます。大半の研究スタッフとフィールドエージェント、収容スペシャリストはレベル2セキュリティクリアランスを付与されています。</td>
+									</tr>
+									<tr><td>Lv.3</td><td>極秘</td>
+										<td>レベル3セキュリティクリアランスは<span class="font-weight-bold text-danger">収容されている異常物体・存在の起源、回収状況、長期的な計画に関するより深いデータを必要とする、上位のセキュリティ担当者、研究職員</span>に与えられます。多くの上位の研究職員やプロジェクト責任者、セキュリティ担当者、応答チームや機動部隊隊員はレベル3セキュリティクリアランスを付与されています。</td>
+									</tr>
+									<tr><td>Lv.4</td><td>最重要機密</td>
+										<td>レベル4セキュリティクリアランスは<span class="font-weight-bold text-danger">サイト全体、あるいは特定の情報、および財団の作戦や研究プロジェクトに関する長期戦略のデータへのアクセスを必要とする上位の管理者</span>に与えられます。レベル4セキュリティクリアランスは基本的にはサイト管理者、セキュリティ責任者、機動部隊指揮官に与えられます。</td>
+									</tr>
+									<tr><td>Lv.5</td><td>Thaumiel</td>
+										<td>レベル5セキュリティクリアランスは<span class="font-weight-bold text-danger">財団内の最高位の管理職員に与えられ、あらゆる戦略上の情報と機密データへの無制限のアクセス</span>が認められます。レベル5セキュリティクリアランスは基本的にはO5評議会員に与えられます。</td>
+									</tr>
+								</tbody>
+							  </table>
+							</div>
+						  </section>					
+					</div> <!-- end level section-->
+					<div id="class" class="tab-pane"> <!-- start class section -->
+						<section class="bg-dark text-center text-light py-5">
+							<p class="mb-5 table-description">
+								職員は危険な以上物体・存在・現象への潜在的な近さに基づいて分類されます。
+							</p>
+							<div class="container">
+							  <table class="table table-hover">
+								<thead>
+								  <tr><th class="pl- pr-5">クラス</th><th>概要</th></tr>
+								</thead>
+								<tbody>
+								  	<tr><td>Aクラス</td>
+										<td>Aクラス職員は財団の戦略行動上、重要と考えられ、いかなる状況下でも怪異に直接接触することが許可されない職員です。
+											<br>Aクラス職員が異常存在に直接接近せざるをえない状況 (施設に収容ユニットが存在するなど) では、Aクラス職員はそのような異常存在を収容する施設周辺にアクセスすることは許可されず、常に安全な場所に居なければなりません。
+											<br>緊急事態のもとでは、Aクラス職員は即座に指定されたサイト外の安全地帯に退避しなければなりません。
+											<br>O5評議会員は常にクラスA職員です。</td>
+									</tr>
+									<tr><td>Bクラス</td>
+										<td>Bクラス職員は各地での財団の運営上、重要と考えられ、検疫をパスし、精神影響効果やミーム的物体の可能性をクリアした異常物体・存在・怪異への接触のみ許可される職員です。
+											<br>収容違反事件や財団施設に対する敵対的な攻撃が発生した場合は、Bクラス職員はできる限り迅速に指定されたサイト外の安全な場所へ退避しなければなりません。</td>
+									</tr>
+									<tr><td>Cクラス</td>
+										<td>Cクラス職員は、極端に攻撃的ないし危険ではない、ほとんどの怪異へ直接接触する職員です。
+											<br>精神影響効果やミーム性の可能性のあるものへ直接接触するCクラス職員は検疫義務に従い必要とみなされればセキュリティ担当者により心理鑑定を受けることになります。
+											<br>収容違反や財団施設に対する敵対的な攻撃が発生した場合は、サイト全域での収容違反やその他の破滅的な事件の場合、Cクラスの非戦闘員は施設のセキュリティ担当者の判断により安全な封鎖エリアへ報告するか退避することになります。</td>
+									</tr>
+									<tr><td>Dクラス</td>
+										<td>Dクラス職員は、特別危険な怪異を制御することに消耗される職員で、A、Bクラス職員との接触は許可されません。
+											<br>Dクラスは基本的に、全世界から暴力犯罪による受刑者、特に死刑囚から徴用されます。
+											<br>必要に迫られた際には、適切な状況で、それ以外の出所、政治犯や難民、その他の民間から財団が身柄を確保することを許可するプロトコル12が施行されます。
+											<br>Dクラス職員標準的な心理鑑定を義務付けられ、毎月の終わりに施設のセキュリティ担当もしくは医療担当者の判断のもと、少なくともBクラス強度の記憶処理か「解雇」を実施されます。
+											<br>施設で破滅的な事件が発生した場合、Dクラス職員は施設のセキュリティ責任者が必要と判断した場合を除き、即座に解雇されます。
+										</td>
+									</tr>
+									<tr><td>Eクラス</td>
+										<td>Eクラス職員は暫定的な分類で、新たに指定された異常物体・存在・現象に対して安全を確保し初期の収容を確立する際に危険に曝される可能性のあるフィールドエージェントや収容担当者に適用されます。
+											<br>Eクラス職員はできる限り迅速に検疫を受け、監視され、行動や人格、精神に有害な変化が無いか検査され、ひと通りの事情聴取を受けた後、心理療法士と医療スタッフによって完治できた場合のみ、職務に復帰することになります。</td>
+									</tr>
+								</tbody>
+							  </table>
+							  							</div>
+						  </section>
+					</div> <!-- end class section -->
+					<div id="occupation" class="tab-pane"> <!-- start occupation section -->
+						<div class="row text-center o-contents">	
+							<div class="col-12"> <!-- start facility staff-->
+								<div class="o-content">
+								   <button data-toggle="collapse" data-target="#facility-staff" class="btn btn-secondary">施設職員</button>
+								   <div id="facility-staff" class="collapse"> 
+									<section class="bg-dark text-center text-light py-5"> <!-- start table1-->
+										<div class="container">
+										<table class="table table-hover text-white">
+											<thead>
+										  	<tr><th class="pl- pr-5">職種名</th><th>概要</th></tr>
+											</thead>
+											<tbody>
+											  <tr><td>収容スペシャリスト</td>
+												<td>財団施設での収容スペシャリストの主な役割は2つです。
+													<br>第1は、異常物体・存在・現象に対して安全を確保し初期の収容を確立するために異常な活動を確認し、付近の財団の収容施設へ移送することを収容チームから依頼されることです。
+													<br>もう一方は、収容エンジニアや技術者から受ける依頼で、財団の施設内で、これらに対する収容設備や収容スキームの考案、精緻化、維持です。
+												</td>
+												</tr>
+												<tr><td>研究員</td>
+													<td>研究員は財団の科学的な部門で、世界中から引きぬかれた特に賢く、訓練された研究者です。
+														<br>化学から植物学まで、理論物理学や宇宙生物学のような秘儀的な、あるいは専門化された分野まで想像できるあらゆる分野の科学者によって、説明できない怪異をより理解し、どう扱うかを知ることが財団の研究計画の目標です。</td>
+												</tr>
+												<tr><td>セキュリティ担当者</td>
+													<td>しばしば単に警備担当 (guards) と呼ばれる財団の施設のセキュリティ担当者は、財団の計画、作戦、職員に関する物理的・情報上のセキュリティを維持する業務を行なっています。
+														<br>主に軍隊や法執行機関、更生施設職員から引きぬかれたセキュリティ担当者はあらゆるタイプの武器の訓練と、収容違反から敵対行動まで対応する様々な偶発自己対策の訓練を受けています。
+														<br>これらの職員は情報セキュリティ、例えば機密文書の置き違いを防いだり、施設のコンピュータシステムを外部の侵入から保護することなどにも責任を負っています。
+														<br>また、財団施設を外部敵対勢力から防衛する最前線でもあります。
+													</td>
+												</tr>
+												<tr><td>戦術対策担当</td>
+													<td>対策チーム、あるいは戦術チームは高度に訓練され重武装化された戦闘チームで、危険な異常存在あるいは敵対的な要注意団体が関与している場合、そして敵対勢力から財団施設を防衛する際に、収容チームを護衛する役割を負っています。
+														<br>対策チームは主要な財団施設に常駐し即座に配置に着ける用意ができる能率的な軍事部隊です。
+													</td>
+												</tr>
+											</tbody>
+										  </table>
+										</div>
+									  </section> <!-- end table1 -->								   
+									</div>  
+								</div>				 
+							</div>	<!-- end facility staff-->
+		   
+							<div class="col-12"> <!-- start field staff-->
+								<div class="o-content">
+								   <button data-toggle="collapse" data-target="#field-staff" class="btn btn-secondary">フィールド職員</button>
+								   <div id="field-staff" class="collapse"> 
+									<section class="bg-dark text-center text-light py-5"> <!-- start table2 -->
+										<div class="container">
+										<table class="table table-hover text-white">
+											<thead>
+										  	<tr><th class="pl- pr-5">職種名</th><th>概要</th></tr>
+											</thead>
+											<tbody>
+											  <tr><td>フィールドエージェント</td>
+												<td>フィールドエージェントは財団の目と耳であり、異常な活動の兆候を見つけ出し、調査し、そしてしばしば地域の法執行機関と秘密活動を行ったり、救急サービスや行政組織のような地域のサービス機関に潜伏します。
+													<br>秘密部隊として、フィールドエージェントは基本的には異常物体を確認するのに必要な装備がありません。
+													<br>そのような事態が発生し孤立している場合は、フィールドエージェントは原則として安全に安全確保と収容をするために近隣の収容チームの救援を要請します。												</td>
+												</tr>
+												<tr><td>機動部隊員</td>
+													<td><a href="http://scp-jp.wikidot.com/task-forces" class="text-danger">機動部隊</a>は財団から選抜されたベテランのフィールド職員で構成された専門家の部隊です。
+														<br>機動部隊は特定の脅威に対処するために機動化され、特定の種類の異常な存在から安全を確保するため、その異常に専門特化したフィールド研究員から重武装の戦闘部隊まで含めることができます。
+														<br>より詳細な情報は、<a href="http://scp-jp.wikidot.com/task-forces" class="text-danger">機動部隊</a>の文書を参照してください。
+												</tr>
+											</tbody>
+										  </table>
+										</div>
+									  </section> <!-- end table2 -->								   
+									</div>  
+								</div>				 
+							</div>	<!-- end field staff-->
+		   
+							<div class="col-12"> <!-- start management staff-->
+								<div class="o-content">
+								   <button data-toggle="collapse" data-target="#management-staff" class="btn btn-secondary">管理職</button>
+								   <div id="management-staff" class="collapse"> 
+									<section class="bg-dark text-center text-light py-5"> <!-- start table3 -->
+										<div class="container">
+										<table class="table table-hover text-white">
+											<thead>
+										  	<tr><th class="pl- pr-5">職種名</th><th>概要</th></tr>
+											</thead>
+											<tbody>
+											  	<tr><td>サイト管理者</td>
+													<td>主要な財団施設のサイト管理者はその場所で最も上位の職員であり、常にサイトの安全作業と全ての収容された異常存在と計画に対して責任を負っています。
+													<br>全ての主要な部門の管理者はサイト管理者に直接報告を行い、サイト管理者はO5評議会へ報告します。</td>
+											  	</tr>
+												<tr><td>O5評議会員</td>
+													<td>O5評議会は財団最高位の管理者で構成される委員会です。
+														<br>収容中の怪異に対する全ての情報への完全なアクセスにより、O5評議会は世界中の財団の活動全体を監督し長期戦略計画の指針を定めます。
+														<br>個々人の秘密性のため、O5評議会員はあらゆる異常物体・存在・現象に対し直接接触することができません。
+														<br>さらに、O5評議会員全員の個人情報は機密事項です。全ての評議会員は識別番号でのみ言及されます (O5-1からO5-13)。
+												</tr>
+											</tbody>
+										  </table>
+										</div>
+									  </section> <!-- end table3 -->								   
+									</div>  
+								</div>				 
+							</div>	<!-- end management staff-->	
+					   </div>
+					  </div>
+
+
+				  </div>
+				</div>
+			  </section>
+	   </div>
+		<div class="fixed-wrap">
+		   <div class="fixed">				
+		   </div>
+	   </div>
+
+	</div> <!--- End fixed background --->
+</div>
+
+
+<!-- ====================================================================================================== -->
  <!-- example -->
  <div id="example" class="offset">
 
 </div>
 
+<!-- ====================================================================================================== -->
  <!-- contact -->
  <div id="contact" class="offset">
 

@@ -5,39 +5,75 @@ body {
   font-family: 'Lato', sans-serif;
   color: #505962;
 }
+/* ====================================================================================================== */
+/*-- alert message --*/
+.alert {
+  background-color: red;
+  z-index:1!important;
+}
+.alert p {
+  color: black;
+  margin: 0 0;
+}
+.alert h3 {
+  color: black;
+  font-weight: 700;
+}
 
+.alert button {
+  margin-top: 1rem;
+  font-size: .5rem;
+  border-radius: 0;
+}
+
+/* 点滅 */
+.blinking{
+    -webkit-animation:blink .5s ease-in-out infinite alternate;
+    -moz-animation:blink .5s ease-in-out infinite alternate;
+    animation:blink .5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+/* ====================================================================================================== */
 /*-- Navigation --*/
 .navbar {
   text-transform: uppercase;
   font-weight: 700;
   font-size: .9rem;
   letter-spacing: .1rem;
-  background: rgba(0,0,0,0.6)!important;
+  background: rgba(0,0,0,1)!important;
 }
-
 .navbar-brand  img{
-  height: 2rem;
+  height: 4rem;
 }
-
 .navbar-nav li {
   padding-right: .8rem;
 }
-
 .navbar-dark .navbar-nav .nav-link {
   color: white;
   padding-top: .8rem;
 }
-
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #1ebba3;
+  color: #6e4242;
 }
 
+/* ====================================================================================================== */
 /*-- Landing Page --*/
 .home-inner {
-  background-image: url("img/computers.png");
+  background-image: url("img/bg1.jpg");
 }
-
 .caption {
   width: 100%;
   max-width: 100%;
@@ -47,76 +83,137 @@ body {
   color: white;
   text-transform: uppercase;
 }
-
-.caption h1 {
+.caption h1{
   font-size: 3.8rem;
   font-weight: 700;
   letter-spacing: .3rem;
   text-shadow: .1rem .1rem .8rem black;
   padding-bottom: 1rem;
 }
-
-.caption h3 {
-  font-size: 2rem;
-  text-shadow: .1rem .1rem .5rem black;
-  padding-bottom: 1.6rem;
+.caption p {
+  font-size: .9rem;
+  color: white;
+  margin: 1rem auto;
+  width: 85%;
 }
-
 .btn-lg {
   border-width: medium;
   border-radius: 0;
   padding: .6rem 1.3rem;
-  font-size: 1.1rem;
+  font-size: .8rem;
+  margin-top: 2rem;
 }
 
 
-/*-- about --*/
-.about-heading  {
-  margin: 2rem 5rem;
-}
-
-.lead {
-  padding-bottom: .8rem;
-}
-
-.btn-primary {
-  border-radius: 0;
-  background-color: #1ebba3;
-  border: none;
-  padding: .6rem 1.3rem;
-}
-
-
-/*-- object-class --*/
-.heading_underline {
+/* ====================================================================================================== */
+/*-- mission --*/
+.heading-underline {
   width: 3rem;
   margin: 2rem auto;
-  border-bottom: 3px solid #1ebba3;
+  border-bottom: 3px solid #6e4242;
 }
 
-.feature-contents {
-  padding:0  10rem;
-}
-
-.heading {
+.heading-title {
   font-weight: 700;
   font-size: 1.3rem;
 }
-
-.feature h3 {
-  font-size: 1.3rem;
+.heading{
+  font-size:.9rem;
+}
+.contents {
+  padding:0  2rem;
+}
+.content-title {
+  background-color: #6e4242;
+  padding-top: 0.6rem;
+  width: 80%;
+  margin: 0  auto;
 }
 
-.feature p {
+.content-title h2 {
+  font-size: 1.3rem;
+  color: white;
+}
+.content-title p {
+  font-size: .9rem;
+  color: white;
+  padding-bottom: 0.4rem;
+}
+.content p {
   font-size: .8rem;
 }
-
-.feature-icon {
-  color: #1ebba3;
+.content-icon {
+  color: #6e4242;
 }
 
-/*-- security-class --*/
+/* ====================================================================================================== */
+/*-- object-class --*/
+.o-fixed-background {
+  background-image: url('img/bg-3.jpg');
+  background-size: cover;
+  width: 100%;
+}
 
+.o-heading-underline {
+  width: 3rem;
+  margin: 2rem auto;
+  border-bottom: 3px solid white;
+}
+
+.o-heading-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: white;
+  padding-top: 3rem;
+}
+.o-heading{
+  font-size:.8rem;
+  color: white;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.o-contents {
+  padding:0  2rem;
+}
+.o-content h3 {
+  color: white;
+}
+.o-content p {
+  font-size: .8rem;
+  color:white;
+}
+.btn-dark {
+  font-size: .5rem;
+}
+.btn-outline-primary, .btn-outline-secondary, .btn-outline-warning, .btn-outline-danger, .btn-outline-success{
+  width: 100%!important;
+  opacity: 0.8;
+  border-radius: 0;
+  border-width: medium;
+}
+
+/* ====================================================================================================== */
+/*-- security-class --*/
+.s-fixed-background {
+  background-image: url('img/bg-4.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.table-description {
+  width: 80%;
+  margin: 0 auto;
+  font-size: .9rem;
+}
+
+.table {
+  font-size: .9rem;
+}
+
+.btn-secondary {
+  width: 100%;
+}
 
 /*============ BOOTSTRAP BREAK POINTS:
 
