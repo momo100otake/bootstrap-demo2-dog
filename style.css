@@ -88,9 +88,11 @@ body {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   color: white;
   text-transform: uppercase;
+  margin-bottom: 30rem;
+
 }
 .caption h1{
   font-size: 3.8rem;
@@ -125,6 +127,7 @@ body {
 .heading-title {
   font-weight: 700;
   font-size: 1.3rem;
+  padding-top: 3rem;
 }
 .heading{
   font-size:.9rem;
@@ -175,7 +178,7 @@ body {
   font-weight: 700;
   font-size: 1.3rem;
   color: white;
-  padding-top: 3rem;
+  padding-top: 8rem;
 }
 .o-heading{
   font-size:.8rem;
@@ -202,6 +205,12 @@ body {
   opacity: 0.8;
   border-radius: 0;
   border-width: medium;
+}
+.lead {
+  padding-top: 2rem;
+}
+.o-contents {
+  padding-bottom: 3rem;
 }
 
 /* ====================================================================================================== */
@@ -265,14 +274,12 @@ footer {
 }
 
 footer li{
-  padding-right: .8rem;
   list-style: none;
-  float: left;
   color: white;
+  padding-bottom: .5rem;
 }
-footer ul {
-  padding-left: 5.5rem;
-  padding-top: .6rem;
+footer ul{
+  padding-inline-start: 0px!important;
 }
 hr.light {
   border-top:1px solid #d5d5d5;
