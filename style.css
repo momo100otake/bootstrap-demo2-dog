@@ -5,6 +5,10 @@ body {
   font-family: 'Lato', sans-serif;
   color: #505962;
 }
+
+.jumbotron {
+  margin-bottom: 0rem!important;
+}
 /* ====================================================================================================== */
 /*-- alert message --*/
 .alert {
@@ -53,6 +57,10 @@ body {
   font-size: .9rem;
   letter-spacing: .1rem;
   background: rgba(0,0,0,1)!important;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .navbar-brand  img{
   height: 4rem;
@@ -73,13 +81,14 @@ body {
 /*-- Landing Page --*/
 .home-inner {
   background-image: url("img/bg1.jpg");
+  background-size: cover;
+  width: 100%;
 }
 .caption {
   width: 100%;
   max-width: 100%;
   position: absolute;
   top: 50%;
-  z-index: 1;
   color: white;
   text-transform: uppercase;
 }
@@ -126,7 +135,7 @@ body {
 .content-title {
   background-color: #6e4242;
   padding-top: 0.6rem;
-  width: 80%;
+  width: 100%;
   margin: 0  auto;
 }
 
@@ -141,6 +150,8 @@ body {
 }
 .content p {
   font-size: .8rem;
+  width: 90%;
+  margin: 1rem auto;
 }
 .content-icon {
   color: #6e4242;
@@ -201,19 +212,86 @@ body {
   width: 100%;
 }
 
+.tab-content {
+  margin-top: 2rem;
+}
 .table-description {
   width: 80%;
   margin: 0 auto;
   font-size: .9rem;
 }
 
-.table {
+ .table-body, .table-label {
   font-size: .9rem;
-}
+} 
 
 .btn-secondary {
   width: 100%;
 }
+
+.table-label {
+  border-top:  3px solid white;
+  border-bottom:  3px solid white;
+}
+
+.table-body {
+  border-bottom:  1px solid white;
+}
+
+.table {
+  margin: 0 auto;
+}
+
+/* ====================================================================================================== */
+/*-- footer --*/
+.fa-twitter {
+  color: #00aced;
+}
+
+.fa-discord {
+  color: #7289da;
+}
+
+.fa-twitter:hover,
+.fa-discord:hover {
+  color: #d5d5d5;
+}
+
+footer {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  background: rgba(0,0,0,1)!important;
+}
+
+footer li{
+  padding-right: .8rem;
+  list-style: none;
+  float: left;
+  color: white;
+}
+footer ul {
+  padding-left: 5.5rem;
+  padding-top: .6rem;
+}
+hr.light {
+  border-top:1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100 {
+  border-top:1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+.social a {
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+
 
 /*============ BOOTSTRAP BREAK POINTS:
 
